@@ -1,0 +1,17 @@
+import cv2
+
+# Carregar a imagem em tons de cinza
+gray = cv2.imread('imagem.jpg', cv2.IMREAD_GRAYSCALE)
+
+# Definir o limiar
+threshold = 128
+
+# Aplicar a limiarização
+_, binary = cv2.threshold(gray, threshold, 255, cv2.THRESH_BINARY)
+
+# Exibir a imagem binarizada
+cv2.imshow('Imagem binarizada', binary)
+
+# Aguardar a tecla ESC para fechar a janela
+cv2.waitKey(0)
+cv2.destroyAllWindows()
