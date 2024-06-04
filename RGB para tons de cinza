@@ -1,0 +1,14 @@
+import cv2
+
+# Carregar a imagem
+img = cv2.imread('imagem.jpg')
+
+# Converter a imagem para tons de cinza
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+# Exibir a imagem em tons de cinza
+cv2.imshow('Imagem em tons de cinza', gray)
+
+# Aguardar a tecla ESC para fechar a janela
+cv2.waitKey(0)
+cv2.destroyAllWindows()
