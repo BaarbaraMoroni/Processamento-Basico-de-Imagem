@@ -1,0 +1,16 @@
+import cv2
+
+# Carregar a imagem
+img = cv2.imread('imagem.jpg')
+
+# Separar os canais R, G e B
+b, g, r = cv2.split(img)
+
+# Exibir os canais separadamente
+cv2.imshow('Canal R', r)
+cv2.imshow('Canal G', g)
+cv2.imshow('Canal B', b)
+
+# Aguardar a tecla ESC para fechar as janelas
+cv2.waitKey(0)
+cv2.destroyAllWindows()
