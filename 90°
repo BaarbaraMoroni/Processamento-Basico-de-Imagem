@@ -1,0 +1,14 @@
+import cv2
+
+# Carregar a imagem
+img = cv2.imread('imagem.jpg')
+
+# Girar a imagem 90 graus
+rotated = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)
+
+# Exibir a imagem girada
+cv2.imshow('Imagem girada', rotated)
+
+# Aguardar a tecla ESC para fechar a janela
+cv2.waitKey(0)
+cv2.destroyAllWindows()
