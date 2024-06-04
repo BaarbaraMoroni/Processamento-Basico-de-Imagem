@@ -1,0 +1,18 @@
+import cv2
+
+# Carregar a imagem
+img = cv2.imread('imagem.jpg')
+
+# Inverter a imagem horizontalmente
+flipped_h = cv2.flip(img, 0)
+
+# Inverter a imagem verticalmente
+flipped_v = cv2.flip(img, 1)
+
+# Exibir as imagens invertidas
+cv2.imshow('Imagem invertida horizontalmente', flipped_h)
+cv2.imshow('Imagem invertida verticalmente', flipped_v)
+
+# Aguardar a tecla ESC para fechar as janelas
+cv2.waitKey(0)
+cv2.destroyAllWindows()
