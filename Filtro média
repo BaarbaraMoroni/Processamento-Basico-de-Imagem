@@ -1,0 +1,14 @@
+import cv2
+
+# Carregar a imagem em tons de cinza
+gray = cv2.imread('imagem.jpg', cv2.IMREAD_GRAYSCALE)
+
+# Aplicar o filtro da média
+blur = cv2.blur(gray, (5, 5))
+
+# Exibir a imagem filtrada
+cv2.imshow('Imagem filtrada', blur)
+
+# Aguardar a tecla ESC para fechar a janela
+cv2.waitKey(0)
+cv2.destroyAllWindows()
