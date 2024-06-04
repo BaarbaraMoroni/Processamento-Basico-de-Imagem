@@ -1,5 +1,4 @@
-#Processamento Básico de Imagem
-Processamento de Imagens em Python
+# Processamento Básico de Imagem
 Este conjunto de scripts utiliza a biblioteca OpenCV para realizar várias operações de processamento de imagens. Abaixo estão as funcionalidades implementadas e uma breve explicação de cada uma.
 
 Funcionalidades
